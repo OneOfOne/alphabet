@@ -1,7 +1,7 @@
 # alphabet
 NATO Alphabet Generator in rust
 
-Compiles to either standalone binary or web wasm.
+Compiles to either a standalone binary or a web wasm package.
 
 ## Usage
 
