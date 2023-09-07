@@ -1,0 +1,75 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	background: linear-gradient(to bottom right, #111111, #202029);
+	color: #fcfcfd;
+	font-size: 1.5rem;
+}
+
+main {
+	color: #fff6d5;
+	font-family: sans-serif;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	height: 20rem;
+}
+
+.heart:after {
+	content: "❤️";
+	font-size: 1.75rem;
+}
+
+h1 + .subtitle {
+	display: block;
+	margin-top: -1rem;
+}
+
+input[type=text] {
+	height: 1.2rem;
+	padding: 0.5rem;
+	border-radius: 0.9rem;
+	width: 20rem;
+}
+
+textarea {
+	width: 100%;
+	min-height: 10rem;
+	background: transparent;
+	color: #fcfcfd;
+}
+
+div, label {
+	display: flex;
+	gap: 0.4rem;
+}
+
+label {
+	align-items: center;
+}
+
+ul {
+	margin: 0;
+	list-style-type: square;
+	padding-left: 1.5rem;
+}
+
+pre {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+li {
+	text-align: left;
+}
