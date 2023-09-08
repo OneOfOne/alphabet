@@ -26,9 +26,10 @@ pub fn app() -> Html {
 	html! {
 		<main>
 			<label for="words">
-				{ "Word(s): " }
-				<input ref={input_ref} onchange={onchange} id="words" type="text"/>
+				{"Words:"}
 			</label>
+						<input ref={input_ref} onchange={onchange} id="words" type="text"/>
+
 			<br />
 			<ul>
 				{alphabet_value.iter().map(|(c,s)| html! { <li><pre>{"`"}{c}{"` -> "}{s}</pre></li> }).collect::<Html>()}

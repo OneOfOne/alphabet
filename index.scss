@@ -11,7 +11,7 @@ body {
 
 	background: linear-gradient(to bottom right, #111111, #202029);
 	color: #fcfcfd;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 }
 
 main {
@@ -20,6 +20,8 @@ main {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	width: 600px;
+	min-width: 350px;
 }
 
 .logo {
@@ -40,14 +42,6 @@ input[type=text] {
 	height: 1.2rem;
 	padding: 0.5rem;
 	border-radius: 0.9rem;
-	width: 20rem;
-}
-
-textarea {
-	width: 100%;
-	min-height: 10rem;
-	background: transparent;
-	color: #fcfcfd;
 }
 
 div, label {
