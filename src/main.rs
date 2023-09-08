@@ -8,16 +8,12 @@ fn main() {
 }
 
 #[cfg(not(target_arch = "wasm32"))]
-use std::{env, io};
-#[cfg(not(target_arch = "wasm32"))]
-fn main() -> io::Result<()> {
+fn main() {
 	// skip first arg, which is the program's name
-
-	for arg in env::args().skip(1) {
+	for arg in std::env::args().skip(1) {
 		println!("-> {} <-", arg);
 		for (c, s) in alphabet::to_alphabet(arg) {
 			println!("{} -> {}", c, s);
 		}
 	}
-	Ok(())
 }

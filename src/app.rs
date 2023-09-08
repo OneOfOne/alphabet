@@ -28,14 +28,13 @@ pub fn app() -> Html {
 			<label for="words">
 				{"Words:"}
 			</label>
-						<input ref={input_ref} onchange={onchange} id="words" type="text"/>
-
+			<input ref={input_ref} onchange={onchange} id="words" type="text"/>
 			<br />
 			<ul>
 				{alphabet_value.iter().map(|(c,s)| html! { <li><pre>{"`"}{c}{"` -> "}{s}</pre></li> }).collect::<Html>()}
 			</ul>
 			<footer>
-				{"Made with to the lack of sleep using Rust, WASM and NeoVim."}
+				{"Made with the complete lack of sleep using Rust, WASM and NeoVim."}
 				<br />
 				{"©️ 2023 "}<a href={"https://github.com/OneOfOne"}>{"OneOfOne"}</a>{" ("}<a href={"https://github.com/OneOfOne/alphabet"}>{"src"}</a>{")."}
 			</footer>
