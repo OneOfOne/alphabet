@@ -6,7 +6,7 @@ use yew::prelude::*;
 #[function_component(App)]
 pub fn app() -> Html {
 	let input_ref = use_node_ref();
-	let alphabet_value_handle = use_state(|| Vec::<String>::new());
+	let alphabet_value_handle = use_state(|| Vec::<(char, String)>::new());
 	let alphabet_value = (*alphabet_value_handle).clone();
 
 	let onchange = {
@@ -31,8 +31,13 @@ pub fn app() -> Html {
 			</label>
 			<br />
 			<ul>
-				{alphabet_value.iter().map(|s| html! { <li><pre>{s}</pre></li> }).collect::<Html>()}
+				{alphabet_value.iter().map(|(c,s)| html! { <li><pre>{"`"}{c}{"` -> "}{s}</pre></li> }).collect::<Html>()}
 			</ul>
+			<footer>
+				{"Made with to the lack of sleep using Rust, WASM and NeoVim."}
+				<br />
+				{"©️ 2023 "}<a href={"https://github.com/OneOfOne"}>{"OneOfOne"}</a>{" ("}<a href={"https://github.com/OneOfOne/alphabet"}>{"src"}</a>{")."}
+			</footer>
 		</main>
 	}
 }

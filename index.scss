@@ -61,8 +61,8 @@ label {
 
 ul {
 	margin: 0;
-	list-style-type: square;
-	padding-left: 1.5rem;
+	list-style-type: none;
+	padding: 0;
 }
 
 pre {
@@ -72,4 +72,13 @@ pre {
 
 li {
 	text-align: left;
+}
+
+footer {
+	position: fixed;
+	bottom: 0.5rem;
+	left: 0;
+	right: 0;
+	font-size: 0.2rem;
+	text-align: center;
 }

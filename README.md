@@ -12,4 +12,5 @@ Compiles to either a standalone binary or a web wasm package.
 - `cargo install trunk wasm-bindgen-cli`
 - `trunk serve` or `trunk build`
 
-[License](LICENSE): MIT
+## License
+[MIT](LICENSE)
